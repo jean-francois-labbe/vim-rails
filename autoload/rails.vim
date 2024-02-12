@@ -666,6 +666,7 @@ function! rails#singularize(word) abort
   let word = s:sub(word,'s$','')
   let word = s:sub(word,'%([nrt]ch|tatus|lias)\zse$','')
   let word = s:sub(word,'%(nd|rt)\zsice$','ex')
+  let word = s:sub(word,'ches$','ch')
   return word
 endfunction
 
